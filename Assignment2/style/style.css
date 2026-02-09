@@ -1,19 +1,19 @@
 body {
-  background-color: 
-  #16142#;
+  background-color: #16142;
+  font-family: Georgia, serif;
 }
 
 header {
     border: 1px solid black;
     padding: 35px;
     text-align: center;
-    background-color: #121d51;
+    background-color: #baa834;
 }
 
   h1 {
   padding: 35px;
   text-align: center;
-  background-color: #d9c4a5;
+  background-color: #baa834;
 }
 
 h2, h3 {
@@ -51,7 +51,7 @@ li {
 }
 
 a {
-    color: #FFFFFF;
+    color: #121d51;
 }
 
 div {
