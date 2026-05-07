@@ -96,7 +96,7 @@
   text-align: center; /* centers the text horizontally */
   display: flex; /* turns the <p> into a flex container */
   align-items: center; 
-
+}
 .nav {
     display: flex;                
     justify-content: space-around; 
