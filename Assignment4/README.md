@@ -1,0 +1,1 @@
+What I really like about Flexbox and Grid was how easy it made it to lay a framework. These will help streamline future projects because they let me have cleaner and more understandable code. I feel like prefer flexbox, as it is a lot more straight-forward and im biaed because the grid is still frustrating me. 
