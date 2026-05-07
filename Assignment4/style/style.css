@@ -57,7 +57,7 @@
   background-color: #878787;
 }
 .item {
-  background-color: #02d1ff;
+  background-color: #ffdf00;
   border-radius: 8px;
   aspect-ratio: 1 / 1;
   display: flex;
@@ -74,4 +74,41 @@
   text-align: center; /* centers the text horizontally */
   display: flex; /* turns the <p> into a flex container */
   align-items: center; /* allows us to center the flex container's content vertically */
+}
+
+.nav {
+    display: flex;                
+    justify-content: space-around; 
+    align-items: center;
+    gap: 20px;                    
+    padding: 15px;                
+    
+    background-color: #161427;    /* Kingsman Dark Navy */
+    border-bottom: 3px solid #baa834; /* Gold accent line */
+}
+
+.nav a {
+    color: #baa834;               /* Gold text */
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: white;                 /* Highlight on hover */
+    text-shadow: 0 0 5px #baa834;
+}
+
+.content-area {
+    text-align: center;           /* Aligns main text as you like */
+    padding: 50px;
+    font-family: Georgia, serif;
+}
+
+footer {
+    text-align: center;           /* Aligns footer text */
+    padding: 20px;
+    font-size: 0.8rem;
 }
