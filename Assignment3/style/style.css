@@ -179,16 +179,23 @@ th {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 10px; /* spacing between images */
-        max-width: 600px; /* optional: keeps the grid from stretching too far */
+        gap: 20px; /* spacing between images */
+        max-width: 800px; /* optional: keeps the grid from stretching too far */
         margin: 0 auto;
     }
 
     .gallery img {
-        width: 30%; /* three images per row (3 x 30% + gaps) */
+        width: calc(33.33% - 20px); /* three images per row (3 x 30% + gaps) */
         height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     }
 
+@media (max-width: 600px) {
+    .gallery img {
+        width: 100%;
+    }
+}
 
     @media (max-width: 600px) {
         body {
