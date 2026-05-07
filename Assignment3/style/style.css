@@ -213,3 +213,37 @@ th {
     display: block;
     margin: 20px auto; /* Centers it */
 }
+
+h1 {
+    /* horizontal-offset vertical-offset blur color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+div {
+    background-color: #d9c4a5;
+    padding: 20px;
+    margin-top: 20px;
+    /* Rounds the sharp corners */
+    border-radius: 15px; 
+    /* Adds a soft shadow underneath */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    /* Spreads the letters apart */
+    letter-spacing: 3px; 
+    text-transform: uppercase; /* Makes them all caps for that sharp look */
+}
+
+.gallery img {
+    transition: 0.3s; /* Makes the change smooth, not instant */
+    opacity: 0.8;    /* Makes them slightly faded by default */
+}
+
+.gallery img:hover {
+    opacity: 1;      /* Turns to full brightness when you hover */
+    transform: scale(1.05); /* Optional: makes the image grow slightly! */
+    cursor: pointer;
+}
