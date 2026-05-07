@@ -1,0 +1,97 @@
+.fondamento-regular {
+  font-family: "Fondamento", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fondamento-regular-italic {
+  font-family: "Fondamento", cursive;
+  font-weight: 400;
+  font-style: italic;
+}
+
+body {
+    font-family: 'Fondamento', serif;
+}
+
+body {
+  background-color: #161427;
+  font-family: Georgia, serif;
+}
+
+header {
+    border: 5px solid black;
+    padding: 35px;
+    text-align: center;
+    background-color: #baa834;
+}
+
+  h1 {
+  padding: 35px;
+  text-align: center;
+  background-color: #baa834;
+}
+
+h2, h3 {
+text-align: center;
+}
+
+p {
+max-width: 70%; /* paragraph never gets wider than 60% of the screen */
+margin: 0 auto; /* centers it horizontally */
+}
+
+{
+list-style-type: none;
+color: navy;
+display: inline-black;
+font-family: Georgia, serif;
+}
+
+nav {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+
+ul {
+    padding: 7px;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 5px 10px;
+    list-style-type: none;
+}
+
+a {
+    color: #121d51;
+}
+
+div {
+    background-color: #d9c4a5;
+    padding: 10px;
+    border: 5px solid #baa834
+    margin-top: 10px;
+    font-family: Georgia, serif;
+}
+
+div h3 {
+    text-align: center;
+}
+
+footer {
+    background-color: #000000;
+    color: #baa834;
+    padding: 7px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
