@@ -78,10 +78,20 @@
 }
 .item {
   background-color: #ffdf00;
+  border: 2px solid #161427;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  align-items: center;
+  font-weight: bold;
+  text-transform: uppercase;
   border-radius: 8px;
   aspect-ratio: 1 / 1;
   display: flex;
   justify-content: center;
+}
+.item:hover, .gallery img:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 15px 30px rgba(186, 168, 52, 0.4); 
+    cursor: pointer;
 }
 .item img {
   padding: 0;
@@ -100,7 +110,8 @@
     justify-content: space-around; 
     align-items: center;
     gap: 20px;                    
-    padding: 15px;                
+    padding: 25px;                
+    letter-spacing: 3px;
     
     background-color: #161427;    /* Kingsman Dark Navy */
     border-bottom: 3px solid #baa834; /* Gold accent line */
