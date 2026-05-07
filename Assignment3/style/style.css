@@ -96,7 +96,7 @@ img {
     display: block;
 }
 
-#gallery {
+    gallery {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -105,7 +105,7 @@ img {
         margin: 0 auto;
     }
 
-    #gallery img {
+    gallery img {
         width: 30%; /* three images per row (3 x 30% + gaps) */
         height: auto;
     }
