@@ -75,7 +75,6 @@
   gap: 30px;
   margin: 0 auto; 
   padding: 40px 20px;
-  background-color: #878787;
 }
 .item {
   background-color: #baa834;
@@ -96,9 +95,12 @@
 }
 .item img {
   padding: 0;
-  width: 100%; /* makes the image fill the container’s width */
-  height: auto; /* maintains the image's aspect ratio */
-  display: block; /* clears any space after the image */
+  width: calc(33% - 30px);
+  min-width: 250px;
+  aspect-ratio: 1 / 1; 
+  object-fit: cover;
+  height: auto; 
+  display: block;
   border-radius: 8px; 
 }
 .item p {
