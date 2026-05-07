@@ -44,14 +44,20 @@
   margin-top: 10px;
 }
 .grid-container {
+    background-color: white;
+    padding: 50px;
     text-align: center; /* Centers text in header, footer, and items */
 }
 .gallery {
   display: grid;
+  flex-wrap: wrap;
+  justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
 
 .item {
- /* item styles here */
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: gold;
+    padding: 20px;
 }
