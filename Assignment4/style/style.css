@@ -10,12 +10,34 @@
 .blog-preview img {
   width: 35%;      /* image takes up 35% of the total width of .blog-preview */
   height: auto;    /* keeps proportions correct */
-  border-radius: 8px; /* optional */
+  border-radius: 8px; 
 }
 .blog-text {
   display: flex; /* another flexbox. We can nest them! */
   flex-direction: column; /* stacks each text element vertically */
   gap: 10px; /* adds consistent space between elements */
+}
+.blog-container {
+    max-width: 800px;
+    margin: 40px auto; /* Centers the container */
+    padding: 20px;
+    background-color: #fdfdfd; /* Light background for readability */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.blog-header h1 {
+    color: #161427; /* Matching Navy theme */
+    border-bottom: 2px solid #baa834; /* Gold accent */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.blog-content p {
+    font-family: 'Georgia', serif;
+    line-height: 1.6; /* Adds spacing between lines of text */
+    color: #333;
+    font-size: 1.1rem;
 }
 .date {
   font-family: Arial, Helvetica, sans-serif;
@@ -68,13 +90,12 @@
   width: 100%; /* makes the image fill the container’s width */
   height: auto; /* maintains the image's aspect ratio */
   display: block; /* clears any space after the image */
-  border-radius: 8px; /* optional */
+  border-radius: 8px; 
 }
 .item p {
   text-align: center; /* centers the text horizontally */
   display: flex; /* turns the <p> into a flex container */
-  align-items: center; /* allows us to center the flex container's content vertically */
-}
+  align-items: center; 
 
 .nav {
     display: flex;                
@@ -101,13 +122,13 @@
 }
 
 .content-area {
-    text-align: center;           /* Aligns main text as you like */
+    text-align: center;           
     padding: 50px;
     font-family: Georgia, serif;
 }
 
 footer {
-    text-align: center;           /* Aligns footer text */
+    text-align: center;         
     padding: 20px;
     font-size: 0.8rem;
 }
