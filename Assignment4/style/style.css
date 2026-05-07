@@ -64,8 +64,8 @@
   margin-top: 10px;
 }
 .grid-container {
-    background-color: #777B7E;
-    padding: 50px;
+    background-color: #2b2b2b;
+    padding: 60px 0;
     text-align: center; /* Centers text in header, footer, and items */
 }
 .gallery {
@@ -115,6 +115,14 @@
     letter-spacing: 3px;
     background-color: #161427;    /* Kingsman Dark Navy */
     border-bottom: 3px solid #baa834; /* Gold accent line */
+}
+h1 {
+    font-family: 'Georgia', serif;
+    font-size: 3rem;
+    color: #161427;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 40px;
 }
 .nav a {
     color: #baa834;               /* Gold text */
