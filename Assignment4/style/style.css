@@ -43,6 +43,9 @@
   color: #8fafa7;
   margin-top: 10px;
 }
+.grid-container {
+    text-align: center; /* Centers text in header, footer, and items */
+}
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
