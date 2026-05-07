@@ -15,7 +15,7 @@ body {
 }
 
 body {
-  background-color: #161427;
+  background-color: #f4f4f4;
   font-family: Georgia, serif;
 }
 
@@ -207,3 +207,9 @@ th {
     }
     }
 
+    .main-video {
+    width: 100%;       /* Makes it span the whole width of the container */
+    max-width: 800px;  /* Or whatever size looks best to you */
+    display: block;
+    margin: 20px auto; /* Centers it */
+}
