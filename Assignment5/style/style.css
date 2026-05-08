@@ -162,3 +162,10 @@ footer {
   margin-right: 10px; /* Adds space between the icons */
   vertical-align: middle; /* Keeps icons visually aligned with any text nearby */
 }
+@media (max-width: 600px) {
+  /* Styles for mobile screens */
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  /* Styles for tablets */
+}
+
