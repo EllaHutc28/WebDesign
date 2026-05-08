@@ -280,11 +280,3 @@ body {
     grid-template-columns: 1fr;
   }
 }
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #1a1a1a;
-  color: white;
-  margin-top: 20px;
-}
