@@ -9,7 +9,26 @@
 </head>
 <body>
 
-<nav><ul><li><a href="index.html">Home</a></li><li><a href="flexbox.html">Gallery</a></li><li><a href="grid.html">Grid</a></li><li><a href="blog-post.html">Blog</a></li></ul></nav>
+    <nav class="navbar navbar-expand-lg sticky-top bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">🎩</a>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navKingsman">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navKingsman">
+                <ul class="navbar-nav mx-auto align-items-end">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="flexbox.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="grid.html">Grid</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog-post.html">Blog</a></li>
+                </ul>
+                <form class="d-flex" action="https://www.google.com/search" method="get" target="_blank">
+                    <input class="form-control me-2" type="search" name="q" placeholder="Search Intelligence">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
 
 <div class="page-wrapper">
     <main class="content-area">
