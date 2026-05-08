@@ -1,6 +1,6 @@
 .chapters-grid {
   display: grid;
-  /* Creates a 2-column layout that adjusts on smaller screens */
+ 
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   padding: 40px;
@@ -10,13 +10,13 @@
 .chapter-card {
   background-color: #ffffff;
   padding: 20px;
-  border-left: 5px solid #c5a059; /* Gold accent border */
+  border-left: 5px solid #c5a059; 
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
 }
 
 .chapter-card:hover {
-  transform: translateY(-5px); /* Adds a subtle lift on hover */
+  transform: translateY(-5px); 
 }
 
 .chapter-card h3 {
@@ -29,4 +29,52 @@
 .chapter-card p {
   line-height: 1.6;
   color: #444;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+  display: flex;
+  justify-content: center; 
+  background-color: #1a1a1a; 
+}
+
+nav li {
+
+  padding: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+
+nav a:hover {
+  color: #c5a059; 
+}
+
+footer {
+  /* Flexbox logic */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  
+  height: 100px;
+  margin-top: 50px;
+  background-color: #1a1a1a;
+  border-top: 3px solid #c5a059; /* Matching gold top border */
+  color: #ffffff;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
 }
