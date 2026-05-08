@@ -217,6 +217,22 @@ nav a:hover { color: #c5a059; }
   justify-content: space-between;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.page-wrapper {
+    max-width: 800px;
+    margin: 0 auto; 
+    padding: 20px;
+}
 /* Layout Styles */
 .page-wrapper {
   max-width: 800px;
