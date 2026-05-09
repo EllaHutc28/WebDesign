@@ -23,8 +23,7 @@
                     <li class="nav-item"><a class="nav-link" href="blog-post.html">Blog</a></li>
                 </ul>
                 <form class="d-flex" action="https://www.google.com/search" method="get" target="_blank">
-                    <label for="site-search" class="visually-hidden">Search site:</label>
-                    <input class="form-control me-2" type="search" name="q" id="site-search" placeholder="Search Intelligence">
+                    <input class="form-control me-2" type="search" name="q" placeholder="Search Intelligence">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
             </div>
@@ -46,12 +45,14 @@
         <p>A gentleman's suit is his armor.</p>
         
         <div class="mt-5 mb-5">
-            <h3 style="color: #baa834;">Field Surveillance</h3>
+            <h3 style="color: #baa834; text-transform: uppercase; letter-spacing: 2px;">Field Surveillance</h3>
             <video src="media/website.mp4" autoplay loop muted playsinline class="img-fluid rounded shadow" style="border: 2px solid #212529; max-width: 100%;"></video>
         </div>
 
-        <h3>Join our list</h3>
-        <button id="openPopup">Sign Up</button>
+        <section class="recruitment-section">
+            <h3>Join our list</h3>
+            <button id="openPopup">Sign Up</button>
+        </section>
 
         <div id="popup">
             <h4>Sign up to receive reminders and updates!</h4>
@@ -67,34 +68,15 @@
 
     <footer class="footer">
         <div class="social-icons">
-            <img src="images/iconx.svg" alt="X logo">
-            <img src="images/iconinstagram.svg" alt="Instagram logo">
-            <img src="images/iconyoutube.svg" alt="YouTube logo">
-            <img src="images/iconlinkedin.svg" alt="LinkedIn logo">
+            <img src="images/iconx.svg" alt="X"><img src="images/iconinstagram.svg" alt="IG">
+            <img src="images/iconyoutube.svg" alt="YT"><img src="images/iconlinkedin.svg" alt="IN">
         </div>
 
-        <ul class="use-cases">
-            <li><strong>Services</strong></li>
-            <li>UI Design</li>
-            <li>UX Design</li>
-            <li>Wireframing</li>
-        </ul>
+        <ul class="use-cases"><li><strong>Services</strong></li><li>UI Design</li><li>UX Design</li><li>Wireframing</li></ul>
+        <ul class="explore"><li><strong>Explore</strong></li><li>Design</li><li>Prototyping</li><li>Design Systems</li></ul>
+        <ul class="resources"><li><strong>Resources</strong></li><li>Blog</li><li>Best Practices</li><li>Support</li></ul>
 
-        <ul class="explore">
-            <li><strong>Explore</strong></li>
-            <li>Design</li>
-            <li>Prototyping</li>
-            <li>Design Systems</li>
-        </ul>
-
-        <ul class="resources">
-            <li><strong>Resources</strong></li>
-            <li>Blog</li>
-            <li>Best Practices</li>
-            <li>Support</li>
-        </ul>
-
-        <div class="copyright w-100 text-center mt-3">
+        <div class="copyright">
             <p>&copy; 2026 Ella Hutchinson. Manners Maketh Man.</p>
         </div>
     </footer>
@@ -107,10 +89,7 @@
     
     <script>
         let latestScroll = 0;
-        window.addEventListener('scroll', () => {
-            latestScroll = window.scrollY;
-        });
-        
+        window.addEventListener('scroll', () => { latestScroll = window.scrollY; });
         function parallaxLoop() {
             const banners = document.querySelectorAll('.parallax-banner-scroll');
             banners.forEach(banner => {
