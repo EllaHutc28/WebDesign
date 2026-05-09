@@ -2,40 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Kingsman | Flexbox Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingsman | Gallery</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-
     <nav class="navbar navbar-expand-lg sticky-top bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
-            <!-- Emoji Brand Placeholder -->
             <a class="navbar-brand" href="index.html">🎩</a>
-
-            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navKingsman" aria-controls="navKingsman" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navKingsman">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navKingsman">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-end">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="flexbox.html">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="grid.html">Grid</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog-post.html">Blog</a>
-                    </li>
+                <ul class="navbar-nav mx-auto align-items-end">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="flexbox.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="grid.html">Grid</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog-post.html">Blog</a></li>
                 </ul>
-
-                <form class="d-flex" role="search" action="https://www.google.com/search" method="get" target="_blank">
-                    <label for="site-search" class="visually-hidden">Search site:</label>
-                    <input class="form-control me-2" type="search" name="q" id="site-search" placeholder="Search Intelligence" aria-label="Search">
+                <form class="d-flex" action="https://www.google.com/search" method="get" target="_blank">
+                    <input class="form-control me-2" type="search" name="q" placeholder="Search Intelligence">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
             </div>
@@ -43,65 +30,65 @@
     </nav>
 
     <div class="page-wrapper">
+        <div class="text-center mb-5">
+            <h1>Intelligence Assets</h1>
+            <p>Review the latest field technology and operational structure.</p>
+        </div>
+
         <div class="blog-preview">
             <img src="images/group.png" alt="Kingsman Group">
             <div class="blog-text">
-                <h2 class="post-title">Designing with Flexbox: Simplicity Through Structure</h2>
-                <p class="post-preview">
-                    Flexbox is one of the most powerful tools in modern web design, allowing designers to align, space, and center content
-                    with ease. In this post, we’ll explore how Flexbox simplifies layouts that once required endless floats and margins—and
-                    how a few key properties can make your designs more fluid and responsive.
-                </p>
+                <h2 class="post-title">Designing with Flexbox</h2>
+                <p class="post-preview">Flexbox is one of the most powerful tools in modern web design, allowing designers to align, space, and center content with ease. In this post, we’ll explore how Flexbox simplifies layouts.</p>
                 <a href="blog-post.html" class="read-more">Read More</a>
             </div>
         </div>
-        
-        <h3>Join our list</h3>
-        <button id="openPopup">Sign Up</button>
 
-        <div id="popup">
-            <h4>Sign up to receive reminders and updates!</h4>
-            <input type="text" placeholder="First Name">
-            <input type="email" placeholder="Email Address">
-            <button id="sendForm">Send</button>
-            <button id="closePopup">Close</button>
+        <div class="blog-preview" style="flex-direction: row-reverse;">
+            <img src="images/merlin.png" alt="Merlin">
+            <div class="blog-text">
+                <h2 class="post-title">The Quartermaster's Interface</h2>
+                <p class="post-preview">When Merlin coordinates a global operation, the data must be fluid and responsive. Layouts ensure that critical mission intel adapts to any screen.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+
+        <div class="blog-preview">
+            <img src="images/kings.png" alt="Eggsy">
+            <div class="blog-text">
+                <h2 class="post-title">Field Operations: Dynamic Adaptation</h2>
+                <p class="post-preview">Just as a Kingsman must adapt to their surroundings, our digital architecture shifts gracefully using responsive rules to accommodate varying intelligence reports.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+        
+        <div class="text-center mt-5">
+            <h3>Join our list</h3>
+            <button id="openPopup">Sign Up</button>
+            
+            <div id="popup">
+                <h4>Sign up to receive reminders and updates!</h4>
+                <input type="text" placeholder="First Name" class="form-control mb-2">
+                <input type="email" placeholder="Email Address" class="form-control mb-2">
+                <div class="popup-buttons">
+                    <button id="sendForm" class="btn btn-dark">Send</button>
+                    <button id="closePopup" class="btn btn-secondary">Close</button>
+                </div>
+            </div>
         </div>
     </div>
 
     <footer class="footer">
         <div class="social-icons">
-            <img src="images/iconx.svg" alt="X logo">
-            <img src="images/iconinstagram.svg" alt="Instagram logo">
-            <img src="images/iconyoutube.svg" alt="YouTube logo">
-            <img src="images/iconlinkedin.svg" alt="LinkedIn logo">
+            <img src="images/iconx.svg" alt="X"><img src="images/iconinstagram.svg" alt="IG">
+            <img src="images/iconyoutube.svg" alt="YT"><img src="images/iconlinkedin.svg" alt="IN">
         </div>
-
-        <ul class="use-cases">
-            <li><strong>Services</strong></li>
-            <li>UI Design</li>
-            <li>UX Design</li>
-            <li>Wireframing</li>
-        </ul>
-
-        <ul class="explore">
-            <li><strong>Explore</strong></li>
-            <li>Design</li>
-            <li>Prototyping</li>
-            <li>Design Systems</li>
-        </ul>
-
-        <ul class="resources">
-            <li><strong>Resources</strong></li>
-            <li>Blog</li>
-            <li>Best Practices</li>
-            <li>Support</li>
-        </ul>
-
-        <div class="copyright">
-            <p>&copy; 2026 Ella Hutchinson. Refined by Design.</p>
-        </div>
+        <ul class="use-cases"><li><strong>Services</strong></li><li>UI Design</li><li>UX Design</li><li>Wireframing</li></ul>
+        <ul class="explore"><li><strong>Explore</strong></li><li>Design</li><li>Prototyping</li><li>Design Systems</li></ul>
+        <ul class="resources"><li><strong>Resources</strong></li><li>Blog</li><li>Best Practices</li><li>Support</li></ul>
+        <div class="copyright"><p>&copy; 2026 Ella Hutchinson. Manners Maketh Man.</p></div>
     </footer>
-
+    
     <script>
         openPopup.onclick = () => popup.classList.add('open');
         closePopup.onclick = () => popup.classList.remove('open');
