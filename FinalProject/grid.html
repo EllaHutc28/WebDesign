@@ -2,18 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kingsman | Intelligence Grid</title>
+    <title>Kingsman Intelligence Grid</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
 
-    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg sticky-top bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">🎩</a>
-            
             <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navKingsman">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -24,48 +21,62 @@
                     <li class="nav-item"><a class="nav-link active" href="grid.html">Grid</a></li>
                     <li class="nav-item"><a class="nav-link" href="blog-post.html">Blog</a></li>
                 </ul>
+                <form class="d-flex" action="https://www.google.com/search" method="get" target="_blank">
+                    <label for="site-search" class="visually-hidden">Search site:</label>
+                    <input class="form-control me-2" type="search" name="q" id="site-search" placeholder="Search Intelligence">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
             </div>
         </div>
     </nav>
 
-    <!-- Main Content Area -->
-    <div class="page-wrapper">
-        <section class="featured-section">
-            <div class="blog-list">
-                <div class="blog-preview">
-                    <img src="images/kings.png" alt="Eggsy">
-                    <div class="blog-text">
-                        <p class="date">MAY 8, 2026</p>
-                        <h3 class="post-title">The Eggsy Recruitment</h3>
-                        <p class="post-preview">The first stage of training begins today.</p>
-                        <a href="#" class="read-more">Read More</a>
-                    </div>
-                </div>
-            </div>
+  <div class="page-wrapper">
+    <section class="featured-section">
+      <div class="blog-list">
+        <div class="blog-preview">
+          <img src="images/kings.png" alt="Eggsy">
+          <div class="blog-text">
+            <p class="date">MAY 8, 2026</p>
+            <h3 class="post-title">The Eggsy Recruitment</h3>
+            <p class="post-preview">The first stage of training begins today.</p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </div>
+      </div>
 
-            <div class="right-column">
-                <div class="hero">
-                    <img src="images/group.png" alt="Kingsman Group">
-                </div>
+      <div class="right-column">
+        <div class="hero">
+          <img src="images/group.png" alt="Kingsman Group">
+        </div>
 
-                <div class="card-section">
-                    <div class="card">
-                        <img src="images/Galahad.png" alt="Galahad">
-                        <h3>Galahad</h3>
-                        <p>Expert in manners and combat.</p>
-                    </div>
-                    <div class="card">
-                        <img src="images/merlin.png" alt="Merlin">
-                        <h3>Merlin</h3>
-                        <p>Intelligence and coordination.</p>
-                    </div>
-                </div>
-            </div>
-        </section> 
-    </div> 
+        <div class="card-section">
+          <div class="card">
+            <img src="images/Galahad.png" alt="Galahad">
+            <h3>Galahad</h3>
+            <p>Expert in manners and combat.</p>
+          </div>
+          <div class="card">
+            <img src="images/merlin.png" alt="Merlin">
+            <h3>Merlin</h3>
+            <p>Intelligence and coordination.</p>
+          </div>
+        </div>
+      </div>
+    </section> 
+    
+    <h3>Join our list</h3>
+    <button id="openPopup">Sign Up</button>
 
-    <!-- Refined Footer -->
-    <footer class="footer">
+    <div id="popup">
+        <h4>Sign up to receive reminders and updates!</h4>
+        <input type="text" placeholder="First Name">
+        <input type="email" placeholder="Email Address">
+        <button id="sendForm">Send</button>
+        <button id="closePopup">Close</button>
+    </div>
+  </div> 
+  
+  <footer class="footer">
         <div class="social-icons">
             <img src="images/iconx.svg" alt="X logo">
             <img src="images/iconinstagram.svg" alt="Instagram logo">
@@ -95,15 +106,14 @@
         </ul>
 
         <div class="copyright">
-            <p>&copy; 2026 Ella Hutchinson. Manners Maketh Man.</p>
+            <p>&copy; 2026 Ella Hutchinson. All rights reserved.</p>
         </div>
     </footer>
 
-<script>
-        openPopup.onclick = () => popup.classList.add('open');
-        closePopup.onclick = () => popup.classList.remove('open');
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+      openPopup.onclick = () => popup.classList.add('open');
+      closePopup.onclick = () => popup.classList.remove('open');
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

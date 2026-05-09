@@ -140,31 +140,46 @@ body {
     .blog-preview img { width: 100%; }
 }
     /* Popup is hidden at first */
+/* Recruitment Popup System */
 #popup {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.9);
-
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.3s ease;
-
-  background-color: #e0e2e5;
-  padding: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease;
+    background-color: #e0e2e5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    z-index: 1050;
+    text-align: center;
 }
-/* Popup becomes visible */
+
 #popup.open {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
 }
-/* Pulse animation on the Sign Up button */
+
+/* Pulse Animation */
 @keyframes pulse {
-  0% { transform: scale(1); } /* start at regular size   */
-  50% { transform: scale(1.03); } /* grow slightly in middle */
-  100% { transform: scale(1); } /* return to normal size   */
+    0% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+    100% { transform: scale(1); }
 }
+
 #openPopup {
-  animation: pulse 3s ease-in-out infinite;
+    animation: pulse 3s ease-in-out infinite;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.popup-buttons button {
+    margin: 10px 5px 0;
 }
