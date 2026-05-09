@@ -139,3 +139,32 @@ body {
     }
     .blog-preview img { width: 100%; }
 }
+    /* Popup is hidden at first */
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+
+  background-color: #e0e2e5;
+  padding: 10px;
+}
+/* Popup becomes visible */
+#popup.open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+/* Pulse animation on the Sign Up button */
+@keyframes pulse {
+  0% { transform: scale(1); } /* start at regular size   */
+  50% { transform: scale(1.03); } /* grow slightly in middle */
+  100% { transform: scale(1); } /* return to normal size   */
+}
+#openPopup {
+  animation: pulse 3s ease-in-out infinite;
+}
