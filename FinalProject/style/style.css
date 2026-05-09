@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400;600&display=swap');
+
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Raleway', Arial, sans-serif;
     background-color: #fdfdfd;
     color: #333;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family: 'Playfair Display', serif;
 }
 
 .navbar-brand {
@@ -21,19 +27,6 @@ body {
     margin: 0 auto; 
     padding: 20px;
 }
-
-.footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    background-color: #baa834;
-    color: black;
-    padding: 40px 20px;
-    margin-top: 40px;
-}
-
-.footer ul { list-style: none; padding: 0; }
-.footer li { margin-bottom: 8px; font-size: 0.9rem; }
 
 .blog-preview {
     display: flex;
@@ -132,13 +125,33 @@ body {
 .featured-section .date { font-size: 0.5rem; }
 .featured-section .read-more { margin-top: 0px !important; }
 
-@media (max-width: 600px) {
-    .featured-section, .card-section, .blog-preview {
-        flex-direction: column;
-        grid-template-columns: 1fr;
-    }
-    .blog-preview img { width: 100%; }
+.parallax-banner, 
+.parallax-banner-scroll {
+    height: 500px;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    position: relative;
 }
+
+.parallax-banner { background-attachment: fixed; }
+.parallax-banner-scroll { background-attachment: scroll; }
+
+.parallax-banner-overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax-banner-content {
+    text-align: center;
+    color: #faf7e8;
+    text-shadow: 0 0 10px #000;
+}
+
 #popup {
     position: fixed;
     top: 50%;
@@ -153,6 +166,8 @@ body {
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     z-index: 1050;
     text-align: center;
+    width: 90%;
+    max-width: 400px;
 }
 
 #popup.open {
@@ -175,58 +190,27 @@ body {
     border: none;
     cursor: pointer;
     margin-top: 20px;
+    border-radius: 4px;
 }
 
-.popup-buttons button {
-    margin: 10px 5px 0;
-}
+.popup-buttons button { margin: 10px 5px 0; }
 
 .footer {
-    background-color: #212529;
+    background-color: #212529; /* Kingsman Dark */
     color: white;
     padding: 40px 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
-}
-.footer ul {
-    list-style: none;
-    padding: 0;
-}
-.social-icons img {
-    width: 30px;
-    margin: 0 10px;
+    margin-top: 40px;
 }
 
-/* --- NEW PARALLAX BANNER STYLES --- */
+.footer ul { list-style: none; padding: 0; }
+.footer li { margin-bottom: 8px; font-size: 0.9rem; }
+.social-icons img { width: 30px; margin: 0 10px; cursor: pointer; }
 
-/* Base Parallax Banner */
-.parallax-banner {
-    height: 500px;
-    background-size: cover;
-    background-position: bottom;
-    background-attachment: fixed; /* parallax */
-    position: relative;
-}
-
-.parallax-banner-overlay {
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.25); /* optional soft darkening */
-}
-
-.parallax-banner-content {
-    position: absolute;
-    bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    color: #faf7e8;
-    text-shadow: 0 0 10px #000;
-}
-
-/* Mobile Fix */
+   7. RESPONSIVE MEDIA QUERIES
 @media (max-width: 768px) {
     .parallax-banner, .parallax-banner-scroll {
         background-attachment: scroll;
@@ -237,14 +221,10 @@ body {
     }
 }
 
-/* Scrolling Parallax (JS Version) */
-.parallax-banner-scroll {
-    height: 500px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* start position */
-    background-attachment: scroll;
-    /* allow movement */
-    position: relative;
+@media (max-width: 600px) {
+    .featured-section, .card-section, .blog-preview {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+    .blog-preview img { width: 100%; }
 }
