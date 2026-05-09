@@ -7,8 +7,13 @@ body {
 }
 
 .navbar-brand {
-    position: absolute;
-    top: 8px;
+    font-size: 1.5rem;
+    color: gold;
+    transition: transform 0.5s ease; 
+}
+
+.navbar-brand:hover {
+    transform: scale(1.15);
 }
 
 .page-wrapper {
